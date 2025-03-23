@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronolist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="main">
+        <h1>ChronoList</h1>
+        <div class="card row">
+            <div class="col-4">  
+                <h2 class="lists-heading">Lists</h2>  
+                <div class="lists-holder"> 
+                    <ul class="list">
+                        <li class="list-item active">Youtube</li>
+                        <li class="list-item ">My Day's Todos</li>
+                    </ul>
+                </div>
+                <div class="todo-input">
+                    <form id="list-form">
+                        <input id="list-input" type="text" name="" placeholder="Enter list name here">
+                        <button type="submit">
+                            Add List
+                        </button>
+                    </form>
+                </div>
+            </div> 
+
+           
+            <div class="col-8">
+                <div class="todos-holder">
+                    <div class="todos-title">
+                        <h3>Youtube List</h3>
+                    </div>
+
+                    <div class="todos-body">
+
+                        <div class="status-holder">
+                            <div class="row">
+                                <div class="col-30">
+                                    <h4>All</h4>
+                                </div>
+                                <div class="col-30 active">
+                                    <h4>InComplete</h4>
+                                </div>
+                                <div class="col-30">
+                                    <h4>Complete</h4>
+                                </div>         
+                            </div>
+                        </div>
+
+                        <!-- Todo List Items -->
+                        
+                            <ol class="todos" id="todos">
+                                <li class="todo-item">
+                                    <p>Todo number one</p>
+                                    <div class="item-actions">
+                                        <button class="btn btn-done">Done</button>
+                                        <button class="btn btn-delete">Delete</button>                                
+                                    </div>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number two</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number three</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                                <li class="todo-item">
+                                    <p>Todo number four</p>
+                                </li>
+                            </ol>
+                    </div> 
+
+                    <!-- Input Form for Adding Todos -->
+                    <div class="todo-input">
+                        <form id="todo-form">
+                            <input id="input" type="text" name="" placeholder="Enter task here">
+                            <button type="submit">
+                                Add
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+
+    </main>
+
+    <script type="text/javascript" src="index.js">
+        
+      
+        const listInput = document.querySelector('list-input')
+        const todoInput = document.getElementById('input')
+        
+        const listForm = document.getElementById('list-form')
+        const todoForm = document.getElementById('todo-form')
+
+        listForm.addEventListener('submit', e => {
+            e.preventDefault()
+            listInput.value = ""
+        })
+    </script>
+
+
+
+</body>
+</html>
